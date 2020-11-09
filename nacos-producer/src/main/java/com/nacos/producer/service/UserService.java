@@ -21,7 +21,7 @@ public class UserService {
         User user = this.userMapper.selectById(1285052338640195585L);
         user.setAge(20);
         this.userMapper.updateById(user);
-//        int i = 1/0;
+        int i = 1/0;
         return user;
     }
 }

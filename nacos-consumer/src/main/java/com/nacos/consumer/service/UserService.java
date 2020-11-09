@@ -25,9 +25,9 @@ public class UserService {
         User user = this.userMapper.selectById(1285052338640195585L);
         user.setAge(30);
         this.userMapper.updateById(user);
-        int i = 1/0;
-        String reuslt = restTemplate.getForObject("http://nacos-producer/nacos/producer/producer",String.class);
 
+        String reuslt = restTemplate.getForObject("http://nacos-producer/nacos/producer/producer",String.class);
+//        int i = 1/0;
         return reuslt;
     }
 }

@@ -20,7 +20,7 @@ public class MyTest {
 
     @Test
     public void test() {
-        List<User> userList = userMapper.selectList(null);
-        System.out.println(userList.size());
+//        List<User> userList = userMapper.selectList(null);
+//        System.out.println(userList.size());
     }
 }
