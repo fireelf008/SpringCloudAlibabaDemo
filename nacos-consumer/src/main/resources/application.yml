@@ -7,10 +7,13 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8080
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/wsf?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT&autoReconnect=true&rewriteBatchedStatements=true&useConfigs=maxPerformance
+    url: jdbc:mysql://localhost:3306/wsf?autoReconnect=true&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT&autoReconnect=true&rewriteBatchedStatements=true&useConfigs=maxPerformance
     username: root
     password: root
     hikari:

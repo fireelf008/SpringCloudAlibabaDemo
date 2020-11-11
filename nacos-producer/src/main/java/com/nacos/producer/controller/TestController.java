@@ -1,5 +1,6 @@
 package com.nacos.producer.controller;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.nacos.producer.service.UserService;
 import com.nacos.producer.utils.JvmUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ public class TestController {
     @Autowired
     private UserService userService;
 
+    @SentinelResource
     @RequestMapping("/producer")
     public String producer(){
 
